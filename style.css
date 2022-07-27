@@ -1,0 +1,59 @@
+body {
+  background-color: rgb(39, 39, 39);
+  margin: 0;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+header {
+  display: flex;
+  height: 12vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#info-icon,
+#settings-icon {
+  width: 7vh;
+  margin-left: 2vh;
+  border-radius: 4vh;
+  transition: box-shadow 0.3s;
+}
+
+#info-icon:hover,
+#settings-icon:hover {
+  box-shadow: 0 0 30px rgb(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+#game-title {
+  color: white;
+  font-size: 11vh;
+  flex: 1;
+  text-align: center;
+}
+
+#info,
+#settings {
+  width: 12vh;
+}
+
+#number-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+#number {
+  display: flex;
+  background-color: white;
+  width: 20vh;
+  height: 15vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#number-value {
+  font-size: 16vh;
+  color: rgb(39, 39, 39);
+}
