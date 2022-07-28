@@ -15,18 +15,37 @@
   </head>
   <body>
     <header>
-      <div id="info">
-        <img id="info-icon" src="icons/info-icon.png" />
-      </div>
       <div id="game-title">Guess the Number</div>
-      <div id="difficulty-level"></div>
-      <div id="settings">
-        <img id="settings-icon" src="icons/settings-icon.png" />
-      </div>
     </header>
     <div id="number-container">
-      <div id="number">
-        <p id="number-value">?</p>
+      <div id="number">?</div>
+    </div>
+    <div id="game">
+      <div id="left-side">
+        <div class="side-content">
+          <div class="guess">
+            <input type="number" placeholder="Guess" id="input-box" />
+          </div>
+          <div class="guess">
+            <button id="check-button">Check</button>
+          </div>
+          <div class="guess">
+            <button id="again-button">Play again</button>
+          </div>
+        </div>
+      </div>
+      <div id="right-side">
+        <div class="side-content">
+          <div id="message">Will you guess it?</div>
+          <div class="label">
+            <p>Score:</p>
+            <div id="score"></div>
+          </div>
+          <div class="label">
+            <p>Highscore:</p>
+            <div id="high-score">0</div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="script.js"></script>

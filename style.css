@@ -11,30 +11,11 @@ header {
   justify-content: center;
 }
 
-#info-icon,
-#settings-icon {
-  width: 7vh;
-  margin-left: 2vh;
-  border-radius: 4vh;
-  transition: box-shadow 0.3s;
-}
-
-#info-icon:hover,
-#settings-icon:hover {
-  box-shadow: 0 0 30px rgb(255, 255, 255, 0.5);
-  cursor: pointer;
-}
-
 #game-title {
   color: white;
   font-size: 11vh;
   flex: 1;
   text-align: center;
-}
-
-#info,
-#settings {
-  width: 12vh;
 }
 
 #number-container {
@@ -51,9 +32,96 @@ header {
   height: 15vh;
   align-items: center;
   justify-content: center;
-}
-
-#number-value {
   font-size: 16vh;
   color: rgb(39, 39, 39);
+}
+
+#game {
+  margin-top: 12vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+
+#left-side,
+#right-side {
+  display: flex;
+}
+
+.label {
+  display: flex;
+  margin-top: 1vh;
+}
+
+.label p {
+  margin: 0;
+}
+
+#message,
+.label,
+.guess {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#message {
+  font-size: 6vh;
+}
+
+.label,
+#score,
+#high-score {
+  font-size: 4vh;
+  margin-left: 1vh;
+}
+
+#check-button,
+#again-button {
+  margin-top: 2vh;
+  display: block;
+  font-size: 3.5vh;
+  background-color: rgb(49, 49, 49);
+  color: white;
+  border: 1px solid rgb(77, 77, 77);
+  transition: background-color 0.18s, box-shadow 0.18s, color 0.18s;
+}
+
+#check-button:hover,
+#again-button:hover {
+  background-color: rgb(75, 75, 75);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  color: rgb(46, 167, 172);
+}
+
+#again-button {
+  margin-top: -20.5vh;
+  visibility: hidden;
+}
+
+#input-box {
+  background-color: rgb(49, 49, 49);
+  border: 1px solid rgb(77, 77, 77);
+  height: 7vh;
+  width: 20vh;
+  color: white;
+  padding: 0;
+  font-size: 5vh;
+  text-align: center;
+  transition: box-shadow 0.18s;
+}
+
+#input-box:hover {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.side-content {
+  width: 80vh;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
