@@ -9,6 +9,16 @@ function gameOver() {
   document.querySelector("#input-box").style.visibility = "hidden";
 }
 
+function win() {
+  document.querySelector("#message").textContent = `YOU WON!`;
+  document.querySelector("#message").style.color = "rgb(0, 197, 0)";
+  document.querySelector("#number").style.backgroundColor = "rgb(0, 197, 0)";
+  if (score > highScore) {
+    highScore = score;
+    document.querySelector("#high-score").textContent = highScore;
+  }
+}
+
 function checkAnswer() {
   const inputValue = Number(document.querySelector("#input-box").value);
   if (!inputValue) {
@@ -16,17 +26,10 @@ function checkAnswer() {
       "#message"
     ).textContent = `You didn't enter any number!`;
   } else {
-    if (score >= 1) {
+    if (score > 1) {
       if (inputValue === magicNumber) {
         gameOver();
-        document.querySelector("#message").textContent = `YOU WON!`;
-        document.querySelector("#message").style.color = "rgb(0, 197, 0)";
-        document.querySelector("#number").style.backgroundColor =
-          "rgb(0, 197, 0)";
-        if (score > highScore) {
-          highScore = score;
-          document.querySelector("#high-score").textContent = highScore;
-        }
+        win();
       } else {
         document.querySelector("#message").textContent = `Given number is too ${
           inputValue > magicNumber ? "high" : "low"
@@ -34,6 +37,9 @@ function checkAnswer() {
         score--;
         document.querySelector("#score").textContent = score;
       }
+    } else if (score === 1 && inputValue == magicNumber) {
+      gameOver();
+      win();
     } else {
       gameOver();
       document.querySelector("#message").textContent = `YOU LOST!`;
