@@ -17,4 +17,4 @@ The less points lost the higher your highscore will be.
 ### How to run
 
 To see this webpage go there:
-https://sweet-tanuki-6d9d80.netlify.app/
+https://maciej-handke-guess-the-number.netlify.app/
