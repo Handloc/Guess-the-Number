@@ -8,6 +8,10 @@ If your guess is lower or higher than hidden number you will be informed about t
 You have 10 chances which are also points.
 The less points lost the higher your highscore will be.
 
+###### I've made this project after lesson on Udemy, but I didn't copied and pasted code from there.
+
+###### I've watched the video and with earned knowledge I've wrote this project by myself, adding features or changing concept a little bit if needed.
+
 ### Features
 
 - Dashboard with points and highscore
